@@ -22,7 +22,7 @@
       <div class="container">
         <nav class="navigation-items">
           <a class="logo-top" href="./index.html" style="text-decoration: none"
-            ><span>WEB</span>STUDIO</a
+            ><span class="part-of-logo">WEB</span>STUDIO</a
           >
           <ul class="list-of-contacts">
             <li class="list-of-contacts-item">
@@ -466,43 +466,110 @@
               </li>
             </ul>
           </div>
+          <div class="subscribe-footer">
+            <label class="footer-email">
+              <span>Subscribe</span>
+              <div class="footer-input-wrap">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="E-mail"
+                  class="footer-input"
+                />
+                <button class="button-footer">
+                  <svg class="send-icon">
+                    <use href="./images/icons.svg#icon-send"></use>
+                  </svg>
+                  <span>Subscribe</span>
+                </button>
+              </div>
+            </label>
+          </div>
         </div>
       </div>
     </footer>
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" data-modal-close class="modal-close">
           <svg class="icon-close-black">
             <use href="./images/symbol-defs.svg#icon-close-black"></use>
           </svg>
         </button>
-        <h3 class="modal-title">
-          Leave your contacts and we will call you back
-        </h3>
-        <form action="#" class="modal-form form">
-          <label for="">
-            Name
-            <input type="text" name="username" class="form-input" autofocus />
-          </label>
-          <label>
-            Phone
-            <input type="tel" name="phone_number" class="form-input" />
-          </label>
-          <label>
-            Email
-            <input type="email" name="email" class="form-input" />
-          </label>
-          <label>
-            Comment
-            <textarea
-              class="form-input"
-              name="feedback"
-              rows="5"
-              placeholder="Text input"
-            ></textarea>
-          </label>
-          <button type="submit" class="form-button">Send</button>
+        <p class="modal-title">Leave your contacts and we will call you back</p>
+        <form action="#" class="modal-form">
+          <div class="form-group">
+            <label class="form-label">
+              <span>Name</span>
+              <div class="form-control">
+                <input
+                  type="text"
+                  name="username"
+                  class="form-input"
+                  autofocus
+                  required
+                />
+                <svg class="form-icon">
+                  <use href="./images/icons.svg#icon-user"></use>
+                </svg>
+              </div>
+            </label>
+          </div>
+          <div class="form-group">
+            <label class="form-label">
+              <span>Phone</span>
+              <div class="form-control">
+                <input
+                  type="tel"
+                  name="phone_number"
+                  class="form-input"
+                  required
+                />
+                <svg class="form-icon">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+              </div>
+            </label>
+          </div>
+          <div class="form-group">
+            <label class="form-label">
+              <span>Email</span>
+              <div class="form-control">
+                <input type="email" name="email" class="form-input" required />
+                <svg class="form-icon">
+                  <use href="./images/icons.svg#icon-letter"></use>
+                </svg>
+              </div>
+            </label>
+          </div>
+          <div class="form-group">
+            <label class="form-label">
+              <span>Comment</span>
+              <textarea
+                class="form-input text-input"
+                name="feedback"
+                placeholder="Text input"
+              ></textarea>
+            </label>
+          </div>
         </form>
+        <div class="form-checkbox">
+          <input
+            type="checkbox"
+            name="policy"
+            id="policy"
+            class="checkbox-input visually-hidden"
+          />
+          <label for="policy" class="form-label-checkbox">
+            <span>
+              <svg class="form-checkbox-icon" width="10" height="8">
+                <use href="./images/icons.svg#icon-check"></use>
+              </svg>
+            </span>
+            I accept the terms and conditions of the
+            <a href="">Privacy Policy</a>
+          </label>
+        </div>
+        <button type="submit" class="form-button">Send</button>
       </div>
     </div>
     <script src="./js/modal.js"></script>
