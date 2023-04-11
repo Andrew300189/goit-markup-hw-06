@@ -642,24 +642,25 @@ footer {
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal {
+  position: relative;
   width: 408px;
-  min-height: 576px;
+  padding: 72px 24px 24px;
   background-color: var(--color-dairy);
   border-radius: 4px;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  padding: 24px;
-  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-close {
+  right: 24px;
+  top: 24px;
   display: flex;
+  position: absolute;
   align-items: center;
   justify-content: center;
-  margin-left: auto;
   width: 24px;
   height: 24px;
   border-radius: 50%;
@@ -672,9 +673,7 @@ footer {
   transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
-.modal-form{
-  margin-bottom: 16px;
-}
+
 .modal-close:is(:hover, :focus) {
   color: var(--color-white);
   background-color: var(--color-ocean);
@@ -688,6 +687,7 @@ footer {
   transform: translate(-50%, -50%) scale(0);
 }
 .modal-title {
+  
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
@@ -695,7 +695,6 @@ footer {
   letter-spacing: 0.02em;
   color: var(--color-navyblue);
   margin: 0;
-  padding-top: 24px;
   margin-bottom: 16px;
 }
 .form-input {
@@ -703,13 +702,13 @@ footer {
   width: 100%;
   border-radius: 4px;
   height: 40px;
-  border: 1px solid var(--color-lightslate);
+  border: 1px solid rgba(46, 47, 66, 0.4);
   padding-left: 38px;
   outline: transparent;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-input:is(:hover, :focus){
-  border-color: var(--color-iris);
+  border: var(--color-iris);
 }
 .text-input{
   display: block;
