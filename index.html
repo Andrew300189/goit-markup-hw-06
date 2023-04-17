@@ -468,7 +468,7 @@
           </div>
           <div class="subscribe-footer">
             <label class="footer-email">
-              <span>Subscribe</span>
+              <p>Subscribe</p>
               <div class="footer-input-wrap">
                 <input
                   type="email"
@@ -477,10 +477,10 @@
                   class="footer-input"
                 />
                 <button class="button-footer">
-                  <svg class="send-icon">
-                    <use href="./images/icons.svg#icon-send"></use>
-                  </svg>
-                  <span>Subscribe</span>
+                 <p>Subscribe</p>
+                    <svg class="send-icon">
+                  <use href="./images/icons.svg#icon-send"></use>
+               </svg>
                 </button>
               </div>
             </label>
@@ -498,58 +498,63 @@
         <p class="modal-title">Leave your contacts and we will call you back</p>
         <form action="#" class="modal-form">
           <div class="form-group">
-            <label class="form-label">
-              <span>Name</span>
-              <div class="form-control">
+            <label for="username">
+              Name
+            </label>
+              <div class="input-wrap">
                 <input
                   type="text"
                   name="username"
-                  class="form-input"
-                  autofocus
+                  id="username"
                   required
                 />
                 <svg class="form-icon">
                   <use href="./images/icons.svg#icon-user"></use>
                 </svg>
               </div>
-            </label>
-          </div>
+            </div>
           <div class="form-group">
-            <label class="form-label">
-              <span>Phone</span>
-              <div class="form-control">
+            <label for="phone">
+              Phone
+            </label>
+              <div class="input-wrap">
                 <input
                   type="tel"
-                  name="phone_number"
-                  class="form-input"
+                  name="phone"
+                  id="phone"
                   required
                 />
                 <svg class="form-icon">
                   <use href="./images/icons.svg#icon-phone"></use>
                 </svg>
               </div>
-            </label>
+            
           </div>
           <div class="form-group">
-            <label class="form-label">
-              <span>Email</span>
-              <div class="form-control">
-                <input type="email" name="email" class="form-input" required />
+            <label for="email">
+              Email
+            </label>
+              <div class="input-wrap">
+                <input 
+                 type="email" 
+                 name="email"
+                 id="email" 
+                 required />
                 <svg class="form-icon">
                   <use href="./images/icons.svg#icon-letter"></use>
                 </svg>
               </div>
-            </label>
+            
           </div>
           <div class="form-group">
-            <label class="form-label">
-              <span>Comment</span>
+            <label for="feedback">
+              Comment
+              </label>
               <textarea
-                class="form-input text-input"
+                class="text-input"
                 name="feedback"
                 placeholder="Text input"
               ></textarea>
-            </label>
           </div>
           <div class="form-checkbox">
           <input
@@ -564,8 +569,9 @@
                 <use href="./images/icons.svg#icon-check"></use>
               </svg>
             </span>
-            I accept the terms and conditions of the
-            <a href="">Privacy Policy</a>
+            <span class="text-policy">
+            I accept the terms and conditions of the</span> 
+            <a href="#">Privacy Policy</a>
           </label>
         </div>
         <button type="submit" class="form-button">Send</button>
