@@ -316,23 +316,23 @@
             </ul>
           </div>
           <div class="subscribe-footer">
-            <label class="footer-email">
-              <p>Subscribe</p>
-              <div class="footer-input-wrap">
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="E-mail"
-                  class="footer-input"
-                />
-                <button class="button-footer">
-                  <p>Subscribe</p>
-                  <svg class="send-icon">
-                    <use href="./images/icons.svg#icon-send"></use>
-                  </svg>
-                </button>
-              </div>
-            </label>
+            <label for="email-input" class="footer-email">Subscribe</label>
+            <div class="footer-input-wrap">
+              <input
+                aria-label="Send your email"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+                class="footer-input"
+                id="email-input"
+              />
+              <button type="submit" aria-label="Submit" class="button-footer">
+                <span>Subscribe</span>
+                <svg class="send-icon">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
       </div>
