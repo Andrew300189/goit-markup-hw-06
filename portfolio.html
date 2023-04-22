@@ -316,32 +316,25 @@
             </ul>
           </div>
           <div class="subscribe-footer">
-            <label for="email-input" class="footer-email">Subscribe</label>
-            <div class="footer-input-wrap">
+            <p>Subscribe</p>
+            <form class="footer-input-wrap">
               <input
-                aria-label="Send your email"
                 type="email"
                 name="email"
                 placeholder="E-mail"
                 class="footer-input"
-                id="email-input"
+                aria-label="Send email"
               />
-              <button type="submit" aria-label="Submit" class="button-footer">
-                <span>Subscribe</span>
+              <button class="button-footer" aria-label="Subscribe">
+                Subscribe
                 <svg class="send-icon">
                   <use href="./images/icons.svg#icon-send"></use>
                 </svg>
               </button>
-            </div>
+            </form>
           </div>
         </div>
       </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
-        <button type="button" data-modal-close class="modal-close">x</button>
-      </div>
-    </div>
-    <script src="./js/modal.js"></script>
   </body>
 </html>

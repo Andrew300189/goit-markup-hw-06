@@ -6,7 +6,7 @@
   --color-ocean: #404bbf;
   --color-green: #31d0aa;
   --color-slate: #434455;
-  --color-lightslate: #bebf99;
+  --color-lightslate: #8e8f99;
   --color-cloud: #f4f4fd;
   --color-grey: #4e5754;
   --color-light-grey: #8e8f99;
@@ -700,10 +700,10 @@ footer {
 }
 
 .text-input{
+  width: 100%;
   display: block;
   min-height: 120px;
   font-family: 'Roboto';
-  font-weight: 400;
   font-size: 12px;
   line-height: 14px;
   resize: none;
@@ -747,7 +747,18 @@ footer {
   display: flex;
   flex-direction: column;
   margin-bottom: 8px;
-  
+}
+.textarea-comment{
+font-family: 'Roboto';
+font-size: 12px;
+line-height: 14px;
+letter-spacing: 0.01em;
+color: var(--color-lightslate);
+width: 100%;
+}
+.textarea-comment label{
+  display: block;
+  margin-bottom: 4px;
 }
 .form-group label {
   display: block;
@@ -769,6 +780,7 @@ footer {
   left: 16px;
   transform: translateY(-50%);
   cursor: pointer;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-group input{
@@ -783,11 +795,15 @@ footer {
   border-radius: 4px;
   padding-left: 38px;
   outline: transparent;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 
 .form-group input:focus, input:hover, textarea:focus, textarea:hover {
-  border: 1px solid var(--color-iris);
+  border-color: var(--color-iris);
+}
+.textarea-comment input:focus, input:hover, textarea:focus, textarea:hover {
+  border-color: var(--color-iris);
 }
 .form-group input:focus + svg, input:hover + svg {
   fill: var(--color-iris); 
@@ -840,7 +856,7 @@ footer {
   border: none;
   fill: var(--color-white);
 }
-  .footer-email p{
+  .subscribe-footer p{
     color: var(--color-white);
     font-weight: 500;
     font-size: 16px;
@@ -895,11 +911,8 @@ footer {
     border-radius: 4px;
     color: var(--color-white);
     border: none;
+    cursor: pointer;
   }
   .button-footer p{
     margin: 0;
   }
-  
-  
-  
-  
